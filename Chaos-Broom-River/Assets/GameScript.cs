@@ -11,7 +11,7 @@ public class GameScript : MonoBehaviour {
 	public float timeDelay = 1f;
 	private float timestamp;
 
-	private float speedChange = 0.9f;
+	private float speedChange = 0.8f;
 	private float timeInterval = 10f;
 
 	// Use this for initialization

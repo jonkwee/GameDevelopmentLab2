@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BroomScript : MonoBehaviour {
 
@@ -30,6 +31,7 @@ public class BroomScript : MonoBehaviour {
 	void OnCollisionEnter(Collision col) {
 		if (col.gameObject.name == "Obstacle(Clone)") {
 			Destroy (gameObject);
+			SceneManager.LoadScene ("_GameOverScene", LoadSceneMode.Single);
 		}
 	}
 }
