@@ -13,8 +13,9 @@ public class Game1Script : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKeyDown (KeyCode.Space)) {
-			//Do we want to go back to the main menu?
 			SceneManager.LoadScene ("_MainGameScene", LoadSceneMode.Single);
+		} else if (Input.GetKeyDown (KeyCode.Return)) {
+			SceneManager.LoadScene ("_TitleScene", LoadSceneMode.Single);
 		}
 	}
 }
