@@ -30,7 +30,7 @@ public class BroomScript : MonoBehaviour {
 
 	void OnCollisionEnter(Collision col) {
 		if (col.gameObject.name == "Obstacle(Clone)") {
-			Destroy (gameObject);
+			//Destroy (gameObject);
 			SceneManager.LoadScene ("_GameOverScene", LoadSceneMode.Single);
 		}
 	}

@@ -8,7 +8,7 @@ public class ObstacleScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+		speed = PlayerPrefs.GetFloat ("speed");
 	}
 	
 	// Update is called once per frame
